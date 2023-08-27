@@ -1,0 +1,11 @@
+A classe endereço não estava sendo instanciada tendo uma 'seta'
+apontada para null, ou seja não teria como alterar a 'String'
+logradouro sendo que não foi criada o objeto endereço ainda...
+
+Sendo assim, uma possível solução é:
+
+Endereço endereço = new Endereço;
+
+Nesse caso sempre que uma pessoa for criada ela já será criada com
+um endereço 'padrão' que poderá ser alterado 'no momento que fosse
+criar uma conta no banco' por exemplo.
